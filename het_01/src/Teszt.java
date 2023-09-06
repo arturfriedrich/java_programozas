@@ -1,3 +1,4 @@
+// az osztáy neve főnév, kezdőbetű nagybetű
 public class Teszt {
 
     public static void main(String[] args) {
