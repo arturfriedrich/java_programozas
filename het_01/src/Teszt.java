@@ -10,6 +10,19 @@ public class Teszt {
             String[] args - a program argumentumai
         */
         System.out.println("Hello csapat!");
+
+        // példány deklaráció - kijelentem, de nincs mögötte tartalom
+        Macska garfield;
+
+        // példány definíció
+        garfield = new Macska("Garfield", "vörös");
+
+        // példány/objektum üzenet
+        garfield.nyavog();
+
+        // nem lehet felülírni, mivel ez egí privát változó a macska osztályban
+        // garfield.szin ="fehér";
+
     }
 
 }
