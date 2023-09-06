@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/het_01/het_01.iml" filepath="$PROJECT_DIR$/het_01/het_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/het_02/het_02.iml" filepath="$PROJECT_DIR$/het_02/het_02.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_programozas.iml" filepath="$PROJECT_DIR$/java_programozas.iml" />
     </modules>
   </component>
