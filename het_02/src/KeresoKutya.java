@@ -17,4 +17,9 @@ public class KeresoKutya extends Kutya {
         return keresesiHatekonysag;
     }
 
+    public String toString() {
+        // A super kulcsszóval hivatkozunk az ősosztály metódusaira
+        return super.toString() + " Keresési hatékonyság: " + keresesiHatekonysag + "%.";
+    }
+
 }
