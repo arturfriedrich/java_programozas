@@ -28,6 +28,8 @@ public class Kutya {
     public void setKor(int kor) {
         if (kor > 0 && kor < 15) {
             this.kor = kor;
+        } else {
+            System.out.println("A kutya életkora 1 és 15 között lehet!");
         }
     }
 
