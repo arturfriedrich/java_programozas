@@ -8,6 +8,7 @@ public class KeresoKutya extends Kutya {
     public KeresoKutya(String nev, int kor, String fajta, int keresesiHatekonysag) {
         // A super kulcsszóval hivatkozunk az ősosztály konstruktorára
         super(nev, kor, fajta);
+        this.fajta = fajta;         // ez nem javasolt mért más osztályok is elérhetik az adattagot
         // A this kulcsszóval hivatkozunk az aktuális osztály adattagjaira
         this.keresesiHatekonysag = keresesiHatekonysag;
     }

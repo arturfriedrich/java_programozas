@@ -2,7 +2,7 @@ public class Kutya {
 
     private String nev;
     private int kor;
-    private String fajta;
+    protected String fajta;         // a protected adattagokat az osztály és az örökölt osztályok is elérhetik
 
     // Konstruktor, példányosításkor hívódik meg
     public Kutya(String nev, int kor, String fajta) {

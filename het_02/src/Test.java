@@ -16,6 +16,7 @@ public class Test {
 
         KeresoKutya k2 = new KeresoKutya("Bodri", 2, "labrador", 100);
 
+        k2.fajta = "komondor";                  // ez nem javasolt mért más osztályok is elérhetik az adattagot
         System.out.println(k2.toString());
         System.out.println("Kor: " + k2.getKor());
         System.out.println("Keresési hatékonyság: " + k2.getKeresesiHatekonysag() + "%. ");
