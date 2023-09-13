@@ -14,6 +14,10 @@ public class Test {
 
         System.out.println(k1.toString());
 
+        KeresoKutya k2 = new KeresoKutya("Bodri", 2, "labrador");
+
+        System.out.println(k2.toString());
+
     }
 
 }
