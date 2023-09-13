@@ -29,7 +29,7 @@ public class Kutya {
         if (kor > 0 && kor < 15) {
             this.kor = kor;
         } else {
-            System.err.println("A kutya életkora 1 és 15 között lehet: " + kor + " érvénytelen.");
+            System.err.println("setKor: A kutya életkora 1 és 15 között lehet: " + kor + " érvénytelen.");
         }
     }
 
