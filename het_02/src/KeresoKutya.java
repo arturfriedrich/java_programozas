@@ -2,6 +2,8 @@
 // ezt az extends kulcsszóval végezzük
 public class KeresoKutya extends Kutya {
 
+    // Házi feladat: keresőkutya továbbszármaztatása: Árvízi mentőkutya, + atttribútum a merülési mélység
+
     private int keresesiHatekonysag;
 
     // Konstruktor
