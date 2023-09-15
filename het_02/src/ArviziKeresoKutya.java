@@ -8,9 +8,7 @@ public class ArviziKeresoKutya extends KeresoKutya {
         this.merulesiMelyseg = merulesiMelyseg;
     }
 
-    public int getMerulesiMelyseg() {
-        return merulesiMelyseg;
-    }
+    public int getMerulesiMelyseg() { return merulesiMelyseg; }
 
     public String toString() {
         return super.toString() + " Merülési mélység: " + merulesiMelyseg + "m.";

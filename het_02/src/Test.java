@@ -21,6 +21,11 @@ public class Test {
         System.out.println("Kor: " + k2.getKor());
         System.out.println("Keresési hatékonyság: " + k2.getKeresesiHatekonysag() + "%. ");
 
+        ArviziKeresoKutya k3 = new ArviziKeresoKutya("Sajtos", 1, "komondor", 100, 10);
+
+        System.out.println(k3.toString());
+        System.out.println("Merülési mélység: " + k3.getMerulesiMelyseg() + "m.");
+
     }
 
 }
