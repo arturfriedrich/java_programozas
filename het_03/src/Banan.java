@@ -5,6 +5,9 @@ public class Banan {
     public static void main(String[] args) {
 
         ArrayList<String> gyumolcsok = new ArrayList<>();
+        final int ar = 50;
+
+        int penz = 0;
 
         gyumolcsok.add("alma");
         gyumolcsok.add("banán");
@@ -21,12 +24,12 @@ public class Banan {
 
         while (gyumolcsok.contains("alma")) {
             gyumolcsok.remove("alma");
+            penz += 50;
         }
 
         gyumolcsok.remove("eper");
 
-        final int ar = 50;
-        System.out.println("A bevétele: " + gyumolcsok.size() * ar + " Ft");
+        System.out.println("A bevétele: " + gyumolcsok.size() * penz + " Ft");
     }
 
 }
