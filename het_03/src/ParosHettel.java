@@ -1,4 +1,4 @@
-public class ParosSzamok {
+public class ParosHettel {
 
     public static void main(String[] args) {
 
