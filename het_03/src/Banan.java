@@ -5,7 +5,6 @@ public class Banan {
     public static void main(String[] args) {
 
         ArrayList<String> gyumolcsok = new ArrayList<>();
-        final int ar = 50;
 
         int penz = 0;
 
