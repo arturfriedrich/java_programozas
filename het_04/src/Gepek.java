@@ -22,6 +22,11 @@ public class Gepek {
         System.out.println(kocsi5);
         System.out.println("Fogyasztas: " + kocsi5.fogyasztasLiterben());
 
+        HybridGepjarmu kocsi6 = new HybridGepjarmu("Toyota", "Prius", "TZA-123", 100, "fekete");
+        System.out.println(kocsi6);
+        System.out.println("Fogyasztas: " + kocsi6.fogyasztasLiterben());
+        System.out.println("Kapacitas: " + kocsi6.getKapacitasKw());
+
     }
 
 }
