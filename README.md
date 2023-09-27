@@ -13,3 +13,5 @@ A félév végén egy projektfeladattal lehet megajánlott jegyet szerezni. Amen
 ## Oktatók
 - dr. Varjasi Norbert
 - Németh Richárd
+
+PS.: Ha segített a repo felkészülni a vizsgára, egy csillagot azért dobhatsz, köszi <3
