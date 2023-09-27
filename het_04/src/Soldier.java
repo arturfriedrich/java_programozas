@@ -10,16 +10,6 @@ public class Soldier {
         this.health = health;
     }
 
-    public void getsHit(int damage) {
-        if (this.health - damage > 0) {
-            this.health -= damage;
-            System.out.println(this.name + " got hit, health: " + this.health);
-        } else {
-            this.health = 0;
-            System.out.println(this.name + " died.");
-        }
-    }
-
     public String getName() {
         return name;
     }
@@ -42,6 +32,16 @@ public class Soldier {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public void getsHit(int damage) {
+        if (this.health - damage > 0) {
+            this.health -= damage;
+            System.out.println(this.name + " got hit, health: " + this.health);
+        } else {
+            this.health = 0;
+            System.out.println(this.name + " died.");
+        }
     }
 
     @Override
