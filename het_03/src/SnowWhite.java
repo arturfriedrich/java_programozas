@@ -11,7 +11,7 @@ public class SnowWhite {
         SnowWhiteWorker Hapci = new SnowWhiteWorker("Hapci", 50, "bányász", 400);
 
         // a) Szundi harmadszor aludt el, ezért levontak tőle háromnapi fizetést.
-        Szundi.raiseSalary(-(400/3));
+        Szundi.raiseSalary(-(Hapci.getSalary()/20*3));
 
         // b) Kuka kap egy esélyt – felvették bányásznak, 500 arany fizetésért.
         SnowWhiteWorker Kuka = new SnowWhiteWorker("Kuka", 50, "bányász", 500);
@@ -19,9 +19,9 @@ public class SnowWhite {
         // c) A bányászok fellázadtak, amiért Kuka többet keres, ezért 1 hétig nem dolgoztak.
         // A fizetésükből levonták az 5 munkanapot, de kaptak 200 arany fizetésemelést.
         // (Szundi nem mert lázadni, ő végigdolgozta azt a hetet is – neki is emeltek).
-        Vidor.raiseSalary(-(400/5));
-        Szende.raiseSalary(-(400/5));
-        Hapci.raiseSalary(-(400/5));
+        Vidor.raiseSalary(-(Vidor.getSalary()/20*5));
+        Szende.raiseSalary(-(Szende.getSalary()/20*5));
+        Hapci.raiseSalary(-(Hapci.getSalary()/20*5));
 
         Vidor.raiseSalary(200);
         Szende.raiseSalary(200);
@@ -29,7 +29,7 @@ public class SnowWhite {
         Szundi.raiseSalary(200);
 
         // d) Kuka megsértődött, amiért neki nem jár emelés, és felmondott. 1 heti fizetés jár neki.
-        Kuka.setSalary(400/5);
+        Kuka.setSalary(Kuka.getSalary()/20*5);
 
         // e) Óriási megrendelést kaptak a királyfitól, ezért minden (még állományban lévő)
         // dolgozó 100 arany bónuszt kapott, Hófehérke 300-at, mert ő a főnök.
