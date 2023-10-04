@@ -12,7 +12,10 @@ public class Lotto {
         szamok.add(66);
         szamok.add(88);
 
-        // genarate 5 random numbers between 1 and 90 without repetition
+        for (Integer szam : szamok) {
+            System.out.print(szam + "\t");
+        }
+        System.out.println();
 
         ArrayList<Integer> lottoSzamok = new ArrayList<>();
         while (lottoSzamok.size() < 5) {
@@ -23,6 +26,11 @@ public class Lotto {
         }
 
         lottoSzamok.sort(null);
+        for (Integer lottoSzam : lottoSzamok) {
+            System.out.print(lottoSzam + "\t");
+        }
+        System.out.println();
+
         int talalat = 0;
         for (Integer lottoSzam : lottoSzamok) {
             for (Integer szam : szamok) {
