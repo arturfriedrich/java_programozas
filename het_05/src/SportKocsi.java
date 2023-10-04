@@ -17,7 +17,7 @@ public class SportKocsi extends Auto {
 
     @Override
     public String toString() {
-        return super.toString() + ", forgalomban: " + isForgalomban;
+        return super.toString() + ", forgalomban: " + (isForgalomban ? "igen" : "nem");
     }
 
 }
