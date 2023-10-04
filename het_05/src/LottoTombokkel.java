@@ -27,12 +27,19 @@ public class LottoTombokkel {
             }
         }
 
-        for (int i = 0; i < lottoszamok.length - 1; i++) {
-            for (int j = i + 1; j < lottoszamok.length; j++) {
-                if (lottoszamok[i] > lottoszamok[j]) {
-                    int temp = lottoszamok[i];
-                    lottoszamok[i] = lottoszamok[j];
-                    lottoszamok[j] = temp;
+        for (int i = 0; i < lottoszamok.length / 2; i++) {
+            for (int j = i; j < lottoszamok.length - i - 1; j++) {
+                if (lottoszamok[j] > lottoszamok[j + 1]) {
+                    int temp = lottoszamok[j];
+                    lottoszamok[j] = lottoszamok[j + 1];
+                    lottoszamok[j + 1] = temp;
+                }
+            }
+            for (int j = lottoszamok.length - 2 - i; j > i; j--) {
+                if (lottoszamok[j] < lottoszamok[j - 1]) {
+                    int temp = lottoszamok[j];
+                    lottoszamok[j] = lottoszamok[j - 1];
+                    lottoszamok[j - 1] = temp;
                 }
             }
         }
