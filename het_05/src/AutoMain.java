@@ -17,7 +17,12 @@ public class AutoMain {
         kocsik.add(barkas);
 
         for (Auto auto : kocsik) {
-            System.out.println(auto);
+            System.out.print(auto);
+            if (auto instanceof Ketutemu) {
+                System.out.println(" - nem vesszük meg");
+            } else {
+                System.out.println(" - megvesszük");
+            }
         }
 
     }
