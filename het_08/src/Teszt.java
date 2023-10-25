@@ -6,13 +6,18 @@ public class Teszt {
 
         Tantargy t1 = new Tantargy("Programozás", 5);
 
+        Ugyintezes to = new Ugyintezes("Tóth Árpád");
+
         System.out.println("Ügyintézés indul");
-        Kerveny u1 = new Kerveny(h1, t1);
+        Kerveny k1 = new Kerveny(h1, t1);
+
+        to.addKerveny(k1);
 
         System.out.println("Az elbírálás elindult");
-        u1.elbiralas(true);
+        k1.elbiralas(true);
+
         System.out.println("Az ügyintézés lezárult");
-        System.out.println(u1.getEredmeny());
+        System.out.println(k1.getEredmeny());
 
     }
 
