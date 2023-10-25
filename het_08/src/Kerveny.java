@@ -1,10 +1,10 @@
-public class Ugyintezes {
+public class Kerveny {
 
     private Hallgato hallgato;
     private Tantargy tantargy;
     private boolean eredmeny;
 
-    public Ugyintezes(Hallgato hallgato, Tantargy tantargy) {
+    public Kerveny(Hallgato hallgato, Tantargy tantargy) {
         this.hallgato = hallgato;
         this.tantargy = tantargy;
         this.eredmeny = false;

@@ -7,7 +7,7 @@ public class Teszt {
         Tantargy t1 = new Tantargy("Programozás", 5);
 
         System.out.println("Ügyintézés indul");
-        Ugyintezes u1 = new Ugyintezes(h1, t1);
+        Kerveny u1 = new Kerveny(h1, t1);
 
         System.out.println("Az elbírálás elindult");
         u1.elbiralas(true);
