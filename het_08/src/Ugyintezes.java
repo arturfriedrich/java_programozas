@@ -4,12 +4,12 @@ import java.util.List;
 public class Ugyintezes {
 
     private String alkalmazott;
-    private List kervenyek;
+    private List<Kerveny> kervenyek;
 
     public Ugyintezes(String alkalmazott) {
         this.alkalmazott = alkalmazott;
 
-        kervenyek = new ArrayList();
+        kervenyek = new ArrayList<Kerveny>();
     }
 
     public String getAlkalmazott() {
@@ -35,6 +35,26 @@ public class Ugyintezes {
         } else {
             System.out.println("Nincs ilyen kérvény");
         }
+    }
+
+    public int getElutasitottKervenyekSzama() {
+        int db = 0;
+        for (Kerveny k : kervenyek) {
+            if (!k.isEredmeny()) {
+                db++;
+            }
+        }
+        return db;
+    }
+
+    public int getElfogadottKervenyekSzama() {
+        int db = 0;
+        for (Kerveny k : kervenyek) {
+            if (k.isEredmeny()) {
+                db++;
+            }
+        }
+        return db;
     }
 
 }

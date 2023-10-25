@@ -19,6 +19,9 @@ public class Teszt {
         System.out.println("Az ügyintézés lezárult");
         System.out.println(k1.getEredmeny());
 
+        System.out.println("Elfogadott kérvények száma: " + to.getElfogadottKervenyekSzama());
+        System.out.println("Elutasított kérvények száma: " + to.getElutasitottKervenyekSzama());
+
     }
 
 }

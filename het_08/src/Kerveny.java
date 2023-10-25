@@ -26,6 +26,10 @@ public class Kerveny {
         this.tantargy = tantargy;
     }
 
+    public boolean isEredmeny() {
+        return eredmeny;
+    }
+
     // elbírálás folyamata
     public void elbiralas(boolean eredmeny) {
         this.eredmeny = eredmeny;
