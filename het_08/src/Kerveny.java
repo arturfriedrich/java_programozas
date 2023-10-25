@@ -2,12 +2,12 @@ public class Kerveny {
 
     private Hallgato hallgato;
     private Tantargy tantargy;
-    private boolean eredmeny;
+    private KervenyStatusz eredmeny;
 
     public Kerveny(Hallgato hallgato, Tantargy tantargy) {
         this.hallgato = hallgato;
         this.tantargy = tantargy;
-        this.eredmeny = false;
+        this.eredmeny = KervenyStatusz.BEADVA;
     }
 
     public Hallgato getHallgato() {
@@ -26,17 +26,21 @@ public class Kerveny {
         this.tantargy = tantargy;
     }
 
-    public boolean isEredmeny() {
+    public KervenyStatusz isEredmeny() {
         return eredmeny;
     }
 
     // elbírálás folyamata
     public void elbiralas(boolean eredmeny) {
+        this.eredmeny = eredmeny ? KervenyStatusz.ELFOGADVA : KervenyStatusz.ELUTASITVA;
+    }
+
+    public void elbiralas(KervenyStatusz eredmeny) {
         this.eredmeny = eredmeny;
     }
 
     public String getEredmeny() {
-        return "Hallgato: " + hallgato.getNev() + " tárgy: " + tantargy.getNev() + " kérelme " + (eredmeny ? "ELFOGADVA" : "ELUTASÍTVA");
+        return "Hallgato: " + hallgato.getNev() + " tárgy: " + tantargy.getNev() + " kérelme " + eredmeny;
     }
 
     @Override

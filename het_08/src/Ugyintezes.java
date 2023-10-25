@@ -40,7 +40,7 @@ public class Ugyintezes {
     public int getElutasitottKervenyekSzama() {
         int db = 0;
         for (Kerveny k : kervenyek) {
-            if (!k.isEredmeny()) {
+            if (k.isEredmeny() == KervenyStatusz.ELUTASITVA) {
                 db++;
             }
         }
@@ -50,7 +50,7 @@ public class Ugyintezes {
     public int getElfogadottKervenyekSzama() {
         int db = 0;
         for (Kerveny k : kervenyek) {
-            if (k.isEredmeny()) {
+            if (k.isEredmeny() == KervenyStatusz.ELFOGADVA) {
                 db++;
             }
         }
