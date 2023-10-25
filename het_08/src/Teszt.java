@@ -15,7 +15,7 @@ public class Teszt {
         to.addKerveny(k1);
 
         System.out.println("Az elbírálás elindult");
-        k1.elbiralas(KervenyStatusz.ELBIRALAS_ALATT);
+        k1.elbiralas(Kerveny.Statusz.ELBIRALAS_ALATT);
         System.out.println("Kérvény állapota: " + k1.isEredmeny());
         k1.elbiralas(true);
 

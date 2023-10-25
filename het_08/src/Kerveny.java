@@ -1,13 +1,22 @@
 public class Kerveny {
 
+    enum Statusz {
+        BEADVA,
+        ELBIRALAS_ALATT,
+        ELFOGADVA,
+        ELUTASITVA,
+        HIANYPOTLAS,
+        TOROLVE;
+    }
+
     private Hallgato hallgato;
     private Tantargy tantargy;
-    private KervenyStatusz eredmeny;
+    private Kerveny.Statusz eredmeny;
 
     public Kerveny(Hallgato hallgato, Tantargy tantargy) {
         this.hallgato = hallgato;
         this.tantargy = tantargy;
-        this.eredmeny = KervenyStatusz.BEADVA;
+        this.eredmeny = Kerveny.Statusz.BEADVA;
     }
 
     public Hallgato getHallgato() {
@@ -26,16 +35,16 @@ public class Kerveny {
         this.tantargy = tantargy;
     }
 
-    public KervenyStatusz isEredmeny() {
+    public Kerveny.Statusz isEredmeny() {
         return eredmeny;
     }
 
     // elbírálás folyamata
     public void elbiralas(boolean eredmeny) {
-        this.eredmeny = eredmeny ? KervenyStatusz.ELFOGADVA : KervenyStatusz.ELUTASITVA;
+        this.eredmeny = eredmeny ? Kerveny.Statusz.ELFOGADVA : Kerveny.Statusz.ELUTASITVA;
     }
 
-    public void elbiralas(KervenyStatusz eredmeny) {
+    public void elbiralas(Kerveny.Statusz eredmeny) {
         this.eredmeny = eredmeny;
     }
 
