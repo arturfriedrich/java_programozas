@@ -14,7 +14,7 @@ A félév végén egy projektfeladattal lehet megajánlott jegyet szerezni. Amen
 - dr. Varjasi Norbert
 - Németh Richárd
 
-Disclamer:
+`Disclamer:`
 Az anyagot a 2023/24/1 félév óta nem frissítettem, így a tartalma elavult is lehet.
 
 PS.: Ha segített a repo felkészülni a vizsgára, egy csillagot azért dobhatsz, köszi <3
