@@ -1,4 +1,4 @@
-# 2023 - Java programozás (GKNB_INTM037)
+# Java programozás (GKNB_INTM037) - 2023
 Ebben a repositoryban a GKNB_INTM037 tárgyhoz tartozó Java programozás gyakorlati 
 anyagai találhatóak. Az anyagok a 2023/2024 1. félévben kerültek leadásra és azóta 
 nem is lettek frissítve. A programkódokat nem én állítottam össze, csak kommentelést 
@@ -13,5 +13,8 @@ A félév végén egy projektfeladattal lehet megajánlott jegyet szerezni. Amen
 ## Oktatók
 - dr. Varjasi Norbert
 - Németh Richárd
+
+Disclamer:
+Az anyagot a 2023/24/1 félév óta nem frissítettem, így a tartalma elavult is lehet.
 
 PS.: Ha segített a repo felkészülni a vizsgára, egy csillagot azért dobhatsz, köszi <3
